@@ -1,0 +1,91 @@
+/*
+Theme Name: DidacticWP
+Theme URI: https://github.com/DanMnez/DidacticWP
+Description: Un tema super básico para entender WordPress, sin ningún extra innecesario ;)
+Author: Daniel Martínez
+Author URI: http://danmnez.me
+Version: 1.0
+
+License: WTFPL
+License URI: http://www.wtfpl.net/about/
+
+Si, la licencia no es una broma :D
+
+Mas informacion: https://codex.wordpress.org/Theme_Development 
+*/
+
+/*
+Estilos minimos para entender un tema de WordPress.
+
+	@autor - Daniel Martínez.
+    @version - 1.0
+    @url - danmnez.me
+*/
+
+body {}
+p {}
+h1, h2, h3 {
+	margin: 0;
+}
+
+header {
+	margin: 10px;
+	padding: 20px;
+	background-color: #ddd;
+}
+
+nav {
+	margin: 10px;
+	padding: 2px;
+	background-color: #ddd;
+}
+
+#contenido {
+	overflow: hidden;
+	margin: 10px;
+	padding: 20px;
+	background-color: #ddd;
+}
+	article { background-color: #bbb; }
+
+section {}
+
+aside { background-color: #bbb; }
+
+footer {
+	margin: 10px;
+	padding: 10px;
+	background-color: #ddd;
+}
+
+/* ============ DISEÑO WEB ADAPTATIVO ============ */
+
+/* Moviles en horizontal o tablets en vertical.
+=============================================== */
+@media (min-width: 768px) {}
+ 
+/* Tablets en horizonal y escritorios normales.
+=============================================== */
+@media (min-width: 1024px) {
+
+	#envoltura {
+		margin: 0 auto;
+		max-width: 1400px;
+	}
+
+	section {
+		float:left;
+		margin-right: 1%; /* margen entre la seccion de articulos y la barra lateral. */
+		width: 60%;
+	}
+
+	aside {
+		float: left;
+		width: 39%;
+	}
+
+}
+ 
+/* Escritorios muy anchos.
+================================================*/
+@media (min-width: 1200px) {}
